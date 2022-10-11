@@ -1,0 +1,24 @@
+$color-bg:red;
+$color-primary:#777;
+$color-secondary:#111;
+$color-tertiary:rgb(3, 139, 40);
+$color-text:#279;
+
+$font-lg:35px;
+$font-md:25px;
+$font-sm:15px;
+
+@function doubledSize($size){
+    @return $size*2;
+}
+
+@mixin transitEffect($param...){
+transition: $param;
+}
+
+@mixin headingStyles($size:50px){
+    text-align:center;
+    width:700px;
+    font-size:$size;
+    margin:auto;
+}

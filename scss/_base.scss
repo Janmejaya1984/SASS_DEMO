@@ -7,6 +7,17 @@ $color-text:#279;
 $font-lg:35px;
 $font-md:25px;
 $font-sm:15px;
+/* map in sass */
+$colors:(
+    primary:red,
+    secondary:green,
+    tertiary:blue
+);
+$pcolors:(
+    1:rgb(67, 35, 4),
+    2:rgb(5, 80, 117),
+    3:rgb(78, 4, 51)
+);
 
 @function doubledSize($size){
     @return $size*2;
@@ -21,4 +32,8 @@ transition: $param;
     width:700px;
     font-size:$size;
     margin:auto;
+    padding:5px 6px 7px 8px;
+    border:2px solid black;
 }
+
+$colorlists: red blue green yellow;

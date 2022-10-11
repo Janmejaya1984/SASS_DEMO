@@ -32,3 +32,26 @@ body{
 %heading-1{
     text-decoration: underline;
 }
+$b:"border";
+$c:"color";
+.heading-3{
+    color:map-get($colors,primary);
+    #{$b}:2px solid blue;
+    background-#{$c}: $color-tertiary;
+    box-sizing: #{$b}-box;
+    width:500px;
+    height:200px;
+}
+
+
+@for $i from 1 through 3{
+    .paragraph-#{$i}{
+        background-color: map-get($pcolors,$i);
+    }
+}
+
+@each $color in $colorlists{
+    .heading-#{$color}{
+        color:$color;
+    }
+}
